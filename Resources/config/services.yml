@@ -1,0 +1,17 @@
+services:
+    funddy.crossdomain.service.crossdomainbrowser:
+        class: Funddy\Bundle\JsCrossDomainBundle\CrossDomainBrowser\CrossDomainBrowser
+        arguments:
+            - @funddy.crossdomain.service.urlvalidator
+            - @funddy.crossdomain.service.httpclient
+        private: true
+
+    funddy.crossdomain.service.urlvalidator:
+        class: Funddy\Bundle\JsCrossDomainBundle\UrlValidator\ConfigurationUrlValidator
+        arguments:
+            - @service_container
+        private: true
+
+    funddy.crossdomain.service.httpclient:
+        class: Funddy\Bundle\JsCrossDomainBundle\HttpClient\FileGetContentsHttpClient
+        private: true

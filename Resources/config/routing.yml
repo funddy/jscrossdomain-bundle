@@ -1,0 +1,6 @@
+funddy_cross_domain:
+    pattern:   /cross-domain
+    defaults:
+        _controller: funddy.crossdomain.controller.crossdomaincontroller:requestAction
+    requirements:
+        _method: GET

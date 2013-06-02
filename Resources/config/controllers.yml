@@ -1,0 +1,5 @@
+services:
+    funddy.crossdomain.controller.crossdomaincontroller:
+        class: Funddy\Bundle\JsCrossDomainBundle\Controller\CrossDomainController
+        arguments:
+            - @funddy.crossdomain.service.crossdomainbrowser
