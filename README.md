@@ -44,7 +44,7 @@ cross_domain:
 
 Usage
 -----
-Configure allowed cross domain URLs
+Configure allowed cross domain URLs at app/config/config.yml
 ```yaml
 funddy_js_cross_domain:
     allowed:
